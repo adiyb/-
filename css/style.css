@@ -1,0 +1,316 @@
+
+@font-face{
+  font-family: yekan;
+  src: url(../fonts/B\ Yekan.TTF);
+  font-weight: normal;
+}
+@font-face{
+  font-family: elham;
+  src: url(../fonts/B\ Elham.TTF);
+  font-weight: normal;
+}
+@font-face{
+  font-family: laleh;
+  src: url(../fonts/Lalezar-Regular.ttf);
+  font-weight: normal;
+}
+@font-face{
+  font-family: afra;
+  src: url(../fonts/Afra.TTF);
+  font-weight: normal;
+}
+@font-face{
+  font-family: afra;
+  src: url(../fonts/Afra\ Light.TTF);
+  font-weight: 300;
+}
+/* **************** Fonts End ********************* */
+/* **************** Variables ********************* */
+:root{
+  --dark-color:#171819;
+  --red-color:#f13a11;
+  --gray-color:#909090;
+  --p-color:#666262;
+  --team-bg:#f9f9f9;
+}
+
+
+
+/* **************** Variables End***************** */
+/* **************** Global *********************** */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  user-select: none;
+}
+/* **************** Global end ******************* */
+/* **************** Navbar *********************** */
+nav{
+  background-color: var(--dark-color);
+}
+.brand{
+  font-family:laleh; 
+  font-size: 28px;
+  line-height: 4rem;
+}
+.brand a{
+  color: white;
+  text-decoration: none;
+  transition: .4s;
+}
+.brand a:hover{
+  color: var(--red-color);
+}
+#menu li>a{
+  font-size: 22px;
+  font-family: yekan;
+}
+#menu a{
+  color: white;
+  transition: .4s;
+}
+#menu a:hover{
+  text-decoration: none;
+  color: var(--red-color);
+}
+.social-icons a{
+  font-size: 20px;
+  margin:18px 10px;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+.social-icons a:hover{
+  color: var(--red-color);
+}
+.lg-menu ul{
+  list-style: none;
+  margin: 20px  auto;
+}
+.lg-menu a{
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+  font-size: 16px;
+  font-family: laleh;
+}
+.lg-menu a:hover{
+  color: var(--red-color);
+}
+
+/* **************** Navbar end ******************* */
+/* **************** Menu toggler button ************** */
+.bar1,.bar2,.bar3{
+  height: 2px;
+  width: 30px;
+  background-color: var(--red-color);
+  margin: 6px 0;
+  position: relative;
+  top: 0;
+}
+.open .bar1{
+  top: 8px;
+  transform: rotate(45deg);
+  transition: top .3s , transform .3s .3s;
+}
+.open .bar2{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.open .bar3{
+  top: -8px;
+  transform: rotate(-45deg);
+  transition: top .3s , transform .3s .3s;
+}
+.closed .bar1{
+  top: 0px;
+  transform: rotate(0deg);
+  transition: top .3s .3s , transform .3s ;
+}
+.closed .bar2{
+  opacity: 1;
+  transition: opacity .5s;
+}
+.closed .bar3{
+  top: 0px;
+  transform: rotate(0deg);
+  transition: top .3s .3s , transform .3s ;
+}
+/* **************** Menu toggler button end ************** */
+/* **************** Hero ********************** */
+#hero{
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 8rem 0;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color:var(--dark-color);
+  opacity: .8;
+}
+#hero h3{
+  color:var(--gray-color) ;
+  font-family: elham;
+}
+#hero h1{
+  color: white;
+  font-family: elham;
+  font-size: 4rem;
+  line-height: 60px;
+}
+.hero-btn{
+  color: white;
+  padding: 8px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 22px;
+  font-family: elham;
+}
+.hero-btn:hover{
+  color: var(--red-color);
+  text-decoration: none;
+}
+.hero-btn.second{
+  border: 1px solid var(--red-color);
+  color: var(--red-color);
+}
+.hero-btn.second:hover{
+  background-color: white;
+}
+/* **************** Hero end********************** */
+/* **************** sub hero************ */
+
+  #sub-hero{
+    background-color: var(--dark-color);
+    padding: 4rem 0;
+  }
+  .sign-up{
+    color: white;
+    text-align: right;
+  }
+  .sign-up h2{
+    font-size: 36px;
+    font-family: laleh;
+  }
+  .sign-up h3{
+    font-size: 28px;
+    font-family: afra;
+  }
+  .sign-up p{
+    font-size: 18px;
+    font-family: yekan;
+    color: var(--p-color);
+  }
+  .sign-up a{
+    color: white;
+    font-family: yekan;
+    text-align: center;
+    background-color: var(--red-color);
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .sign-up a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: var(--red-color);
+  }
+  .work-hour{
+    text-align: right;
+  }
+  .work-hour h2{
+    color: white;
+    font-size: 36px;
+    font-family: laleh;
+  }
+  .work-hour h3{
+    color: white;
+    font-family: elham;
+  }
+  .work-hour p{
+    color: var(--p-color);
+    font-family: elham;
+    font-size: 18px;
+  }
+/* **************** sub hero end************ */
+/* **************** introduction start********************* */
+#introduction{
+  padding: 5rem 0;
+  text-align: right;
+  background-color: var(--team-bg);
+}
+#introduction h2{
+  color: var(--dark-color);
+  font-family: laleh;
+  font-size: 36px;
+}
+#introduction p{
+  color: var(--p-color);
+  font-family: yekan;
+  font-size: 18px;
+}
+.team img{
+  width: 100%;
+  height: auto;
+}
+.team-info{
+  background-color: white;
+  box-shadow: 5px 5px 30px rgb(180, 180, 180,.3), -5px 0px 30px rgb(180, 180, 180,.3);
+  padding: 10px 30px;
+}
+.trainer{
+  float: right;
+}
+.trainer h3{
+  font-size: 36px;
+  font-family: laleh;
+  margin-bottom: 0;
+}
+.trainer p{
+  font-size: 25px !important; 
+  font-family: elham !important;
+}
+.left{
+  float: left;
+  height: 100%;
+}
+.left a{
+  font-size: 22px;
+  color: var(--p-color);
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+.left a:hover{
+  color: var(--red-color);
+}
+/* **************** introduction end********************* */
+/* **************** Media Queries ******************** */
+@media(max-width:460px){
+  .brand{
+    font-size: 5vw;
+  }
+}
+@media(min-width:768px){
+  .brand{
+    font-size: 40px;
+  }
+  #hero{
+    padding:10rem 0 ;
+  }
+}
+@media(min-width:992px){
+  .team-info{
+    padding: 0px 10px;
+  }
+  .trainer h3{
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
