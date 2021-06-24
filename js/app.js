@@ -10,5 +10,6 @@ $(function(){
     
 })
 
+AOS.init();
 
 

@@ -44,6 +44,9 @@
   border: 0;
   user-select: none;
 }
+body{
+  overflow-x: hidden;
+}
 /* **************** Global end ******************* */
 /* **************** Navbar *********************** */
 nav{
@@ -312,5 +315,8 @@ nav{
   .trainer h3{
     font-size: 24px;
     margin-top: 10px;
+  }
+  #introduction h2{
+    font-size: 48px;
   }
 }
