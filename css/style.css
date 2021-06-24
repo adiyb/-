@@ -179,7 +179,7 @@ nav{
   text-decoration: none;
 }
 .hero-btn.second{
-  border: 1px solid var(--red-color);
+  border: 3px solid var(--red-color);
   color: var(--red-color);
 }
 .hero-btn.second:hover{
