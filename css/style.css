@@ -151,9 +151,9 @@ nav{
 }
 .overlay{
   position: absolute;
-  inset: 0 0 0 0;
+inset: 0 0 0 0 ;
   background-color:var(--dark-color);
-  opacity: .8;
+  opacity: .9;
 }
 #hero h3{
   color:var(--gray-color) ;
