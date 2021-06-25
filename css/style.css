@@ -295,6 +295,57 @@ nav{
   color: var(--red-color);
 }
 /* **************** introduction end********************* */
+/* **************** Classes Start ******************* */
+#classes{
+  background-color: rgb(254, 254, 254);
+  overflow: hidden;
+}
+#classes h3{
+  font-family: laleh;
+  font-size: 36px;
+}
+.my-6{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.class-info{
+  background-color: white;
+  text-align: right;
+  box-shadow: 5px 5px 10px rgba(202, 202, 202,.3),-5px 5px 10px  rgba(202, 202, 202,.3);
+  padding: 30px;
+}
+.class-info h5{
+  font-size: 28px;
+  font-family: elham;
+  margin: 0;
+  float: right;
+}
+.class-info span{
+  font-size:14px;
+  font-family: laleh;
+  float: left;
+  background-color: var(--red-color);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.class-info p{
+  font-family: yekan;
+  font-size: 18px;
+  color: var(--p-color);
+  margin: 0;
+}
+/* **************** Classes End ************************** */
+/* **************** Timetable start****************** */
+#timetable{
+  background-color: var(--dark-color);
+  
+}
+/* **************** Timetable end************************ */
 /* **************** Media Queries ******************** */
 @media(max-width:460px){
   .brand{
