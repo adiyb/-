@@ -47,6 +47,9 @@
 body{
   overflow-x: hidden;
 }
+main{
+  margin-bottom: 80px;
+}
 /* **************** Global end ******************* */
 /* **************** Navbar *********************** */
 nav{
@@ -302,14 +305,11 @@ nav{
 #classes{
   background-color: rgb(254, 254, 254);
   overflow: hidden;
+  padding: 100px 0;
 }
 #classes h3{
   font-family: laleh;
   font-size: 36px;
-}
-.my-6{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 .class-info{
   background-color: white;
@@ -346,9 +346,78 @@ nav{
 /* **************** Timetable start****************** */
 #timetable{
   background-color: var(--dark-color);
-  
+  padding: 100px 0;
+  direction: ltr;
+  color: white;
+  text-align: center;
+}
+table{
+margin: 0 auto;
+}
+table .fa{
+  display: table-cell;
+}
+#timetable h3{
+  font-size: 36px;
+  color: white;
+  font-family: laleh;
+}
+th{
+  background-color: var(--red-color);
+}
+td:first-child{
+  background-color: var(--red-color);
+}
+th,td{
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid rgb(56, 56, 56);
 }
 /* **************** Timetable end************************ */
+/* **************** Message start************************* */
+#message{
+  text-align: right;
+}
+#message h3{
+  font-size: 40px;
+  font-family: elham;
+  margin: 80px 0 30px 0;
+}
+#message input,textarea{
+  border: 1px solid var(--gray-color);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  margin: 20px 0;
+}
+#message button{
+  width: 100%;
+  background-color: var(--dark-color);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+#message span{
+  color: var(--red-color);
+  margin-left: 10px;
+}
+#message p{
+  font-family: yekan;
+  font-size: 20px;
+  color: var(--p-color);
+}
+/* **************** Message End************************* */
+/* **************** Footer start*************** */
+footer{
+  font-size: 17px;
+  padding: 50px;
+  font-family: laleh;
+}
+footer span{
+  color: var(--red-color);
+}
+/* **************** Footer End******************* */
 /* **************** Media Queries ******************** */
 @media(max-width:460px){
   .brand{
@@ -360,6 +429,9 @@ nav{
   .trainer p{
     font-size: 18px !important; 
   }
+  th,td{
+    font-size:14px;
+  }
 }
 @media(min-width:768px){
   .brand{
@@ -367,6 +439,9 @@ nav{
   }
   #hero{
     padding:10rem 0 ;
+  }
+  th,td{
+    padding: 10px 20px;
   }
 }
 @media(min-width:992px){
@@ -378,5 +453,13 @@ nav{
   }
   #introduction h2{
     font-size: 48px;
+  }
+  td,th{
+    padding: 10px 40px;
+  }
+}
+@media(min-width:1200px){
+  th,td{
+    padding: 10px 60px;
   }
 }
